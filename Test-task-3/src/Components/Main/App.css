@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.search {
+    width: 50%;
+    text-align: center;
+    height: 35px;
+    font-size: 25px;
+    margin: 0 0 0 100px;
+    background-color: #c7c7c7;
+    border: none;
+}
+
+table {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #bbbbbb1f;
+}
+
+th {
+    width: auto;
+    padding: 10px;
+    text-align: center;
+
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+.App {
+    margin: 0 auto;
+    padding: 50px;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+td {
+    text-align: center;
+    width: auto;
+    font-size: 19px;
+    padding: 4px;
+}
+
+.check {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    background-color: #10cd10;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+button:disabled {
+    /*color: grey;*/
+    background-color: slategrey;
+    cursor: default;
+}
+
+.reset-btn {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.print-text {
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+}
+
+.first-dot {
+    opacity: 0;
+    font-size: 24px;
+    animation-name: first;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.second-dot {
+    opacity: 0;
+    font-size: 24px;
+    animation-name: second;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 0.4s;
+}
+
+.third-dot {
+    opacity: 0;
+    font-size: 24px;
+    animation-name: third;
+    animation-delay: 0.4s;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes first {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes second {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes third {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.checked {
+    text-align: right;
+    padding: 10px;
+    display: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.no-data-searched {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
